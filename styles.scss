@@ -1,0 +1,31 @@
+// font-family: 'Assistant',sans-serif;
+// font-family: 'Lobster',cursive;
+// font-family: 'Oswald',sans-serif; 
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: whitesmoke;
+
+    header{
+        text-align: center;
+        height: 130px;
+        border: 2px solid red;
+        .menu{
+            float: right;
+            padding: 15px;
+            padding: 2px 30px 0 0;
+        }
+        i{
+            float: left;
+            font-size: 70px;
+            padding: 20px 0 0 30px ;
+        }
+        h1{
+            font-family: 'Lobster', cursive;
+            font-size: 70px;
+        }
+    }
+}
