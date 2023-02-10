@@ -24,6 +24,12 @@ img {
     border: 2px solid rgba(82, 82, 82, 0.326);
 }
 
+.icon {
+    width: auto;
+    color: white;
+    font-size: 40px;
+}
+
 // fin codigos universales
 
 body{
@@ -48,32 +54,43 @@ body{
             font-family: 'Lobster', cursive;
             font-size: 70px;
         }
+    
     }
-    main{
-        .ADD{
-
-        }
-        .PROMO{
-
-        }
-        .ITEM{
-        
-        }
-    }
+    
     footer{
         width: auto;
         height: 350px;
         background-color: black;
         text-align: center;
+        border: 3px solid red;
+
         h2{
             color: white;
         }
-        .redes{
-            i {
-                width: auto;
+        .contact{
+            height: 50px;
+            width: auto;
+            border: 3px solid red;
+            text-align: center;
+
+            i{
+                font-size: 30px;
+                border: 3px solid red;
+            }
+            p{
                 color: white;
-                font-size: 40px;
-                }
+                border: 3px solid red;
+                margin: 5px;
+                
+            }
+            }
+        .coment{
+            text-align: center;
+            margin-top: 50px;
+            float: left;
+            p{
+                color: white;
+            }
         }
-    }
+        }
     }
