@@ -6,8 +6,28 @@
     margin: 0;
     padding: 0;
 }
+// codigos universales
+
+.ITEMTEXT {
+    float: right;
+    text-align: center;
+    padding: 15px;
+}
+img {
+    height: 190px;
+    width: 250px;
+}
+
+.ITEMM {
+    height: 190px;
+    width: 500px;
+    border: 2px solid rgba(82, 82, 82, 0.326);
+}
+
+// fin codigos universales
+
 body{
-    background-color: whitesmoke;
+    background-image: linear-gradient(360deg, white 79.9% , red );
 
     header{
         text-align: center;
@@ -23,9 +43,37 @@ body{
             font-size: 70px;
             padding: 20px 0 0 30px ;
         }
-        h1{
+        #titulo{
+            text-shadow: 10px;
             font-family: 'Lobster', cursive;
             font-size: 70px;
         }
     }
-}
+    main{
+        .ADD{
+
+        }
+        .PROMO{
+
+        }
+        .ITEM{
+        
+        }
+    }
+    footer{
+        width: auto;
+        height: 350px;
+        background-color: black;
+        text-align: center;
+        h2{
+            color: white;
+        }
+        .redes{
+            i {
+                width: auto;
+                color: white;
+                font-size: 40px;
+                }
+        }
+    }
+    }

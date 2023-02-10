@@ -3,8 +3,25 @@
   padding: 0;
 }
 
+.ITEMTEXT {
+  float: right;
+  text-align: center;
+  padding: 15px;
+}
+
+img {
+  height: 190px;
+  width: 250px;
+}
+
+.ITEMM {
+  height: 190px;
+  width: 500px;
+  border: 2px solid rgba(82, 82, 82, 0.326);
+}
+
 body {
-  background-color: whitesmoke;
+  background-image: linear-gradient(360deg, white 79.9%, red);
 }
 body header {
   text-align: center;
@@ -21,9 +38,22 @@ body header i {
   font-size: 70px;
   padding: 20px 0 0 30px;
 }
-body header h1 {
+body header #titulo {
+  text-shadow: 10px;
   font-family: "Lobster", cursive;
   font-size: 70px;
 }
-
-/*# sourceMappingURL=styles.css.map */
+body footer {
+  width: auto;
+  height: 350px;
+  background-color: black;
+  text-align: center;
+}
+body footer h2 {
+  color: white;
+}
+body footer .redes i {
+  width: auto;
+  color: white;
+  font-size: 40px;
+}/*# sourceMappingURL=styles.css.map */
