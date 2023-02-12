@@ -2,121 +2,206 @@
 // font-family: 'Lobster',cursive;
 // font-family: 'Oswald',sans-serif; 
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 // codigos universales
+
+h3 {
+    text-align: center;
+    font-family: 'Assistant', sans-serif;
+}
 
 .ITEMTEXT {
     float: right;
     text-align: left;
-    padding-right: 110px;
+    width: 246px;
+    text-shadow: 20px;
 }
+
 img {
-    height: 190px;
+    height: 210px;
     width: 250px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 
 .ITEMM {
-    height: 190px;
+    height: 210px;
     width: 500px;
-    border: 2px solid rgba(31, 30, 30, 0.326);
-    border-radius: 3px;
-    margin-left: 15px;
+    border-radius: 8px;
     background-color: white;
+    box-shadow: inset 0 0 0 2px rgb(255, 255, 255),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
-.ITEM{
+
+.ITEMM:hover {
+    border: 2px solid rgba(253, 23, 23, 0.737);
+}
+
+.ITEM {
     display: grid;
     grid-template-columns: 2fr;
-    grid-template-rows: repeat(6, 300px);
-    grid-gap: 30px;
+    grid-gap: 15px;
+    grid-template-rows: repeat(6, 250px);
+    height: fit-content;
+
 }
+
+.centro {
+    margin-left: 120px;
+    margin-right: 60px;
+}
+
+h2 {
+    font-family: 'Lobster', cursive;
+}
+
+p {
+    font-family: 'Assistant', sans-serif;
+}
+
 .icon {
     width: auto;
     color: white;
     font-size: 40px;
 }
 
-.money{
+.money {
     color: rgb(6, 126, 6);
+    float: right;
+    margin-right: 10px;
+}
+
+.buybtn {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    background-color: rgba(128, 128, 128, 0.353);
+    border-radius: 8px;
+    margin-left: 55px;
+}
+
+.buybtn:hover {
+    background-color: rgba(253, 23, 23, 0.845);
+    color: white;
 }
 
 // fin codigos universales
 
-body{
-    background-image: linear-gradient(360deg, white 79.9% , red );
+body {
+    background-image: linear-gradient(360deg, white 79.9%, red);
 
-    header{
+    header {
         text-align: center;
         height: 130px;
-        .menu{
+
+        .menu {
             float: right;
             padding: 15px;
             padding: 2px 30px 0 0;
         }
-        i{
+
+        i {
             float: left;
             font-size: 70px;
-            padding: 20px 0 0 30px ;
+            padding: 20px 0 0 30px;
         }
-        #titulo{
-            text-shadow: 10px;
+
+        #titulo {
             font-family: 'Lobster', cursive;
             font-size: 70px;
         }
-    
+
     }
-    
-    footer{
+
+    footer {
         width: auto;
         height: 350px;
         background-color: black;
         text-align: center;
 
-        h2{
+        h2 {
             color: white;
         }
-        .contact{
+
+        .contact {
             height: 50px;
             width: auto;
             text-align: center;
 
-            i{
+            i {
                 font-size: 30px;
             }
-            p{
+
+            p {
                 color: white;
                 margin: 5px;
-                
+
             }
-            }
-        .coment{
+        }
+
+        .coment {
             text-align: center;
             margin-top: 50px;
             float: left;
-            p{
+
+            p {
                 color: white;
             }
         }
-        }
     }
+}
+
+@media only screen and (max-width: 1097px) {
+    .ITEM {
+        margin-left: 10px;
+    }
+
+    #ITEMPROMO {
+        margin-left: 10px;
+        height: 800px;
+    }
+}
+
 @media only screen and (min-width: 1097px) {
     .ITEM {
         grid-template-columns: 3fr 3fr;
-        grid-template-rows: repeat(4, 200px);
+        grid-template-rows: (4, 200px);
+        height: 800px;
+    }
+
+    #ITEMPROMO {
+        grid-template-columns: 3fr 3fr;
+        grid-template-rows: (4, 200px);
+        height: 500px;
     }
 }
 
 @media only screen and (min-width: 1628px) {
     .ITEM {
         grid-template-columns: 1fr 1fr 1fr;
+        height: 600px;
+    }
+
+    #ITEMPROMO {
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 250px;
     }
 }
 
 @media only screen and (min-width: 1920px) {
     .ITEM {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(1, 200px);
+        grid-template-rows: (1, 200px);
+        height: auto;
+    }
+
+    #ITEMPROMO {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: (1, 200px);
+        height: auto;
     }
 }
