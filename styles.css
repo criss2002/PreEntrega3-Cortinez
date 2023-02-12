@@ -5,8 +5,8 @@
 
 .ITEMTEXT {
   float: right;
-  text-align: center;
-  padding: 15px;
+  text-align: left;
+  padding-right: 110px;
 }
 
 img {
@@ -17,7 +17,17 @@ img {
 .ITEMM {
   height: 190px;
   width: 500px;
-  border: 2px solid rgba(82, 82, 82, 0.326);
+  border: 2px solid rgba(31, 30, 30, 0.326);
+  border-radius: 3px;
+  margin-left: 15px;
+  background-color: white;
+}
+
+.ITEM {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: repeat(6, 300px);
+  grid-gap: 30px;
 }
 
 .icon {
@@ -26,13 +36,16 @@ img {
   font-size: 40px;
 }
 
+.money {
+  color: rgb(6, 126, 6);
+}
+
 body {
   background-image: linear-gradient(360deg, white 79.9%, red);
 }
 body header {
   text-align: center;
   height: 130px;
-  border: 2px solid red;
 }
 body header .menu {
   float: right;
@@ -54,7 +67,6 @@ body footer {
   height: 350px;
   background-color: black;
   text-align: center;
-  border: 3px solid red;
 }
 body footer h2 {
   color: white;
@@ -62,16 +74,13 @@ body footer h2 {
 body footer .contact {
   height: 50px;
   width: auto;
-  border: 3px solid red;
   text-align: center;
 }
 body footer .contact i {
   font-size: 30px;
-  border: 3px solid red;
 }
 body footer .contact p {
   color: white;
-  border: 3px solid red;
   margin: 5px;
 }
 body footer .coment {
@@ -81,4 +90,22 @@ body footer .coment {
 }
 body footer .coment p {
   color: white;
+}
+
+@media only screen and (min-width: 1097px) {
+  .ITEM {
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: repeat(4, 200px);
+  }
+}
+@media only screen and (min-width: 1628px) {
+  .ITEM {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .ITEM {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(1, 200px);
+  }
 }/*# sourceMappingURL=styles.css.map */
