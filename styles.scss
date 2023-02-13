@@ -13,7 +13,15 @@ h3 {
     text-align: center;
     font-family: 'Assistant', sans-serif;
 }
-
+#location{
+    text-align: center;
+    margin-top: 120px;
+}
+iframe{
+    display: grid;
+    margin: 0 0 150px 10px;
+    box-shadow: inset 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
 .ITEMTEXT {
     float: right;
     text-align: left;
@@ -114,6 +122,23 @@ body {
             font-family: 'Lobster', cursive;
             font-size: 70px;
         }
+        .menus{
+            text-align: center;
+            margin-left: 100px;
+            width: 100%;
+            .btn{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                font-family: 'Assistant',sans-serif;
+                display: inline-block;
+                padding: 3px;
+                border-radius: 4px;
+            }
+            .btn:hover{
+                background-color: white;
+            }
+        }
 
     }
 
@@ -177,6 +202,9 @@ body {
         grid-template-columns: 3fr 3fr;
         grid-template-rows: (4, 200px);
         height: 500px;
+    }
+    header{
+        height: 900px;
     }
 }
 
