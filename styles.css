@@ -99,6 +99,7 @@ body {
 body header {
   text-align: center;
   height: 130px;
+  color: black;
 }
 body header .menu {
   float: right;
@@ -109,14 +110,16 @@ body header i {
   float: left;
   font-size: 70px;
   padding: 20px 0 0 30px;
+  color: black;
 }
 body header #titulo {
   font-family: "Lobster", cursive;
   font-size: 70px;
+  font-weight: 600;
 }
 body header .menus {
   text-align: center;
-  margin-left: 100px;
+  margin-left: 0;
   width: 100%;
 }
 body header .menus .btn {
@@ -139,6 +142,8 @@ body footer {
 }
 body footer h2 {
   color: white;
+  font-size: 30px;
+  font-family: "Lobster", cursive;
 }
 body footer .contact {
   height: 50px;
@@ -154,8 +159,8 @@ body footer .contact p {
 }
 body footer .coment {
   text-align: center;
-  margin-top: 50px;
-  float: left;
+  margin-top: px;
+  float: lef;
 }
 body footer .coment p {
   color: white;
@@ -163,6 +168,12 @@ body footer .coment p {
 
 @media only screen and (max-width: 1097px) {
   .ITEM {
+    margin-left: 10;
+  }
+  main {
+    margin-top: 100px;
+  }
+  .ITEMM {
     margin-left: 10px;
   }
   #ITEMPROMO {
@@ -206,4 +217,65 @@ body footer .coment p {
     grid-template-rows: 1, 200px;
     height: auto;
   }
+}
+.main-section {
+  margin: 0 auto;
+  margin-top: 25%;
+  padding: 0;
+}
+
+.modal-content {
+  background-color: #3b4652;
+  opacity: 0.85;
+  padding: 0 20px;
+  box-shadow: 0px 0px 3px #848484;
+}
+
+.user-img {
+  margin-top: -50px;
+  margin-bottom: 35px;
+}
+
+.user-img img {
+  width: 100px;
+  height: 100px;
+  box-shadow: 0px 0px 3px #848484;
+  border-radius: 50%;
+}
+
+.form-group input {
+  height: 42px;
+  font-size: 18px;
+  border: 0;
+  padding-left: 54px;
+  border-radius: 5px;
+}
+
+.form-group::before {
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  left: 28px;
+  font-size: 22px;
+  padding-top: 4px;
+}
+
+.form-group#user-group::before {
+  content: "\f007";
+}
+
+.form-group#contrasena-group::before {
+  content: "\f023";
+}
+
+button {
+  width: 60%;
+  margin: 5px 0 25px;
+}
+
+.forgot {
+  padding: 5px 0;
+}
+
+.forgot a {
+  color: white;
 }/*# sourceMappingURL=styles.css.map */
