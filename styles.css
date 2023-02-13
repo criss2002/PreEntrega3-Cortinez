@@ -206,7 +206,7 @@ body footer .coment p {
     height: 250px;
   }
 }
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1990px) {
   .ITEM {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1, 200px;
