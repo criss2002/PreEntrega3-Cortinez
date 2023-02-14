@@ -96,32 +96,38 @@ p {
 body {
   background-image: linear-gradient(360deg, white 79.9%, red);
 }
+
 body header {
   text-align: center;
   height: 130px;
   color: black;
 }
+
 body header .menu {
   float: right;
   padding: 15px;
   padding: 2px 30px 0 0;
 }
+
 body header i {
   float: left;
   font-size: 70px;
   padding: 20px 0 0 30px;
   color: black;
 }
+
 body header #titulo {
   font-family: "Lobster", cursive;
   font-size: 70px;
   font-weight: 600;
 }
+
 body header .menus {
   text-align: center;
   margin-left: 0;
   width: 100%;
 }
+
 body header .menus .btn {
   text-decoration: none;
   color: black;
@@ -131,37 +137,45 @@ body header .menus .btn {
   padding: 3px;
   border-radius: 4px;
 }
+
 body header .menus .btn:hover {
   background-color: white;
 }
+
 body footer {
   width: auto;
   height: 350px;
   background-color: black;
   text-align: center;
 }
+
 body footer h2 {
   color: white;
   font-size: 30px;
   font-family: "Lobster", cursive;
 }
+
 body footer .contact {
   height: 50px;
   width: auto;
   text-align: center;
 }
+
 body footer .contact i {
   font-size: 30px;
 }
+
 body footer .contact p {
   color: white;
   margin: 5px;
 }
+
 body footer .coment {
   text-align: center;
   margin-top: px;
   float: lef;
 }
+
 body footer .coment p {
   color: white;
 }
@@ -170,54 +184,65 @@ body footer .coment p {
   .ITEM {
     margin-left: 10;
   }
+
   main {
     margin-top: 100px;
   }
+
   .ITEMM {
     margin-left: 10px;
   }
+
   #ITEMPROMO {
     margin-left: 10px;
     height: 800px;
   }
 }
+
 @media only screen and (min-width: 1097px) {
   .ITEM {
     grid-template-columns: 3fr 3fr;
     grid-template-rows: 4, 200px;
     height: 800px;
   }
+
   #ITEMPROMO {
     grid-template-columns: 3fr 3fr;
     grid-template-rows: 4, 200px;
     height: 500px;
   }
+
   header {
     height: 900px;
   }
 }
+
 @media only screen and (min-width: 1628px) {
   .ITEM {
     grid-template-columns: 1fr 1fr 1fr;
     height: 600px;
   }
+
   #ITEMPROMO {
     grid-template-columns: 1fr 1fr 1fr;
     height: 250px;
   }
 }
+
 @media only screen and (min-width: 1990px) {
   .ITEM {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1, 200px;
     height: auto;
   }
+
   #ITEMPROMO {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1, 200px;
     height: auto;
   }
 }
+
 .main-section {
   margin: 0 auto;
   margin-top: 25%;
@@ -278,4 +303,6 @@ button {
 
 .forgot a {
   color: white;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
